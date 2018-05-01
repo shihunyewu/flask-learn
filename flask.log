@@ -1,0 +1,804 @@
+Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/project/Python/flask-log/app.py", line 16, in root
+    return render_template('index.html',word = word,user=user,comments = comments)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "D:\project\Python\flask-log\templates\index.html", line 9, in top-level template code
+    {% import 'macros.html' as macros %}
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: macros.html
+Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/project/Python/flask-log/app.py", line 16, in root
+    return render_template('index.html',word = word,user=user,comments = comments)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "D:\project\Python\flask-log\templates\index.html", line 25, in top-level template code
+    {{ render_comment(comment) }}
+jinja2.exceptions.UndefinedError: 'render_comment' is undefined
+Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/project/Python/flask-log/app.py", line 16, in root
+    return render_template('index.html',word = word,user=user,comments = comments)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "D:\project\Python\flask-log\templates\index.html", line 25, in top-level template code
+    {{ render_comment(comment) }}
+jinja2.exceptions.UndefinedError: 'render_comment' is undefined
+Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/project/Python/flask-log/app.py", line 16, in root
+    return render_template('index.html',word = word,user=user,comments = comments)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "D:\project\Python\flask-log\templates\index.html", line 25, in top-level template code
+    {{ render_comment(comment) }}
+jinja2.exceptions.UndefinedError: 'render_comment' is undefined
+Exception on / [GET]
+Traceback (most recent call last):
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/project/Python/flask-log/app.py", line 16, in root
+    return render_template('index.html',word = word,user=user,comments = comments)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\flask\templating.py", line 134, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "D:\project\Python\flask-log\templates\index.html", line 25, in template
+    {{ macros。render_comment(comment) }}
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\parser.py", line 199, in parse_for
+    body = self.parse_statements(('name:endfor', 'name:else'))
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\parser.py", line 165, in parse_statements
+    result = self.subparse(end_tokens)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\parser.py", line 875, in subparse
+    add_data(self.parse_tuple(with_condexpr=True))
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\parser.py", line 620, in parse_tuple
+    args.append(parse())
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\parser.py", line 432, in parse_expression
+    return self.parse_condexpr()
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\parser.py", line 437, in parse_condexpr
+    expr1 = self.parse_or()
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\parser.py", line 450, in parse_or
+    left = self.parse_and()
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\parser.py", line 459, in parse_and
+    left = self.parse_not()
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\parser.py", line 470, in parse_not
+    return self.parse_compare()
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\parser.py", line 474, in parse_compare
+    expr = self.parse_math1()
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\parser.py", line 496, in parse_math1
+    left = self.parse_concat()
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\parser.py", line 507, in parse_concat
+    args = [self.parse_math2()]
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\parser.py", line 517, in parse_math2
+    left = self.parse_pow()
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\parser.py", line 528, in parse_pow
+    left = self.parse_unary()
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\parser.py", line 546, in parse_unary
+    node = self.parse_primary()
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\parser.py", line 562, in parse_primary
+    next(self.stream)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\lexer.py", line 359, in __next__
+    self.current = next(self._iter)
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\lexer.py", line 562, in wrap
+    for lineno, token, value in stream:
+  File "D:\project\Python\flask-log\venv\lib\site-packages\jinja2\lexer.py", line 739, in tokeniter
+    name, filename)
+jinja2.exceptions.TemplateSyntaxError: unexpected char '。' at 420
+Exception on / [GET]
+Traceback (most recent call last):
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\program\python\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/project/Python/flask-log/app.py", line 19, in root
+    return render_template('index.html', word=word, user=user, comments=comments, name='sgy')
+  File "E:\program\python\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "E:\program\python\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "E:\program\python\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "E:\program\python\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "E:\program\python\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\program\python\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "D:\project\Python\flask-log\templates\index.html", line 1, in top-level template code
+    {% extends "bootstrapbase.html" %}
+  File "D:\project\Python\flask-log\templates\bootstrapbase.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "E:\program\python\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "E:\program\python\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "E:\program\python\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "E:\program\python\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 21, in block "body"
+    {% block navbar %}
+  File "D:\project\Python\flask-log\templates\bootstrapbase.html", line 22, in block "navbar"
+    <li><a href="{{ url_for('user',name='john') }}">404</a></li>
+  File "E:\program\python\lib\site-packages\flask\helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "E:\program\python\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "E:\program\python\lib\site-packages\flask\helpers.py", line 323, in url_for
+    force_external=external)
+  File "E:\program\python\lib\site-packages\werkzeug\routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'user' with values ['name']. Did you mean 'root' instead?
+Exception on / [GET]
+Traceback (most recent call last):
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\program\python\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/project/Python/flask-log/app.py", line 19, in root
+    return render_template('index.html', word=word, user=user, comments=comments, name='sgy')
+  File "E:\program\python\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "E:\program\python\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "E:\program\python\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "E:\program\python\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "E:\program\python\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\program\python\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "D:\project\Python\flask-log\templates\index.html", line 1, in top-level template code
+    {% extends "bootstrapbase.html" %}
+  File "D:\project\Python\flask-log\templates\bootstrapbase.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "E:\program\python\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "E:\program\python\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "E:\program\python\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "E:\program\python\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 21, in block "body"
+    {% block navbar %}
+  File "D:\project\Python\flask-log\templates\bootstrapbase.html", line 22, in block "navbar"
+    <li><a href="{{ url_for('hello','john',_external=True) }}">404</a></li>
+TypeError: url_for() takes 1 positional argument but 2 were given
+Exception on / [GET]
+Traceback (most recent call last):
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\program\python\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/project/Python/flask-log/app.py", line 19, in root
+    return render_template('index.html', word=word, user=user, comments=comments, name='sgy')
+  File "E:\program\python\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "E:\program\python\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "E:\program\python\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "E:\program\python\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "E:\program\python\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\program\python\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "D:\project\Python\flask-log\templates\index.html", line 1, in top-level template code
+    {% extends "bootstrapbase.html" %}
+  File "D:\project\Python\flask-log\templates\bootstrapbase.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "E:\program\python\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "E:\program\python\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "E:\program\python\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "E:\program\python\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 21, in block "body"
+    {% block navbar %}
+  File "D:\project\Python\flask-log\templates\bootstrapbase.html", line 22, in block "navbar"
+    <li><a href="{{ url_for('404',user='john',_external=True) }}">404</a></li>
+  File "E:\program\python\lib\site-packages\flask\helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "E:\program\python\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "E:\program\python\lib\site-packages\flask\helpers.py", line 323, in url_for
+    force_external=external)
+  File "E:\program\python\lib\site-packages\werkzeug\routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint '404' with values ['user']. Did you mean 'hello' instead?
+Exception on /fake [GET]
+Traceback (most recent call last):
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\program\python\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/project/Python/flask-log/app.py", line 28, in fake
+    return redirect(url_for('user',name='john')) # 重新定向网页
+  File "E:\program\python\lib\site-packages\flask\helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "E:\program\python\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "E:\program\python\lib\site-packages\flask\helpers.py", line 323, in url_for
+    force_external=external)
+  File "E:\program\python\lib\site-packages\werkzeug\routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'user' with values ['name']. Did you mean 'fake' instead?
+Exception on /hello [GET]
+Traceback (most recent call last):
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\program\python\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: hello() missing 1 required positional argument: 'name'
+Exception on /hello [GET]
+Traceback (most recent call last):
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\program\python\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: hello() missing 1 required positional argument: 'name'
+Exception on /hello [GET]
+Traceback (most recent call last):
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\program\python\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+TypeError: hello() missing 1 required positional argument: 'name'
+Exception on /submit [GET]
+Traceback (most recent call last):
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\program\python\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/project/Python/flask-log/app.py", line 29, in submit
+    return render_template('submit.html')
+  File "E:\program\python\lib\site-packages\flask\templating.py", line 134, in render_template
+    context, ctx.app)
+  File "E:\program\python\lib\site-packages\flask\templating.py", line 116, in _render
+    rv = template.render(context)
+  File "E:\program\python\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "E:\program\python\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "E:\program\python\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\program\python\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "D:\project\Python\flask-log\templates\submit.html", line 2, in top-level template code
+    {% import "bootstrap/wtf.html" as wtf %}
+  File "D:\project\Python\flask-log\templates\bootstrapbase.html", line 1, in top-level template code
+    {% extends "bootstrap/base.html" %}
+  File "E:\program\python\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "E:\program\python\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "E:\program\python\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "E:\program\python\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block "body"
+    {% block content -%}
+  File "D:\project\Python\flask-log\templates\bootstrapbase.html", line 35, in block "content"
+    {% block page_content %}{% endblock %}
+  File "D:\project\Python\flask-log\templates\submit.html", line 8, in block "page_content"
+    {{ wtf.quick_form(form) }}
+  File "E:\program\python\lib\site-packages\jinja2\runtime.py", line 553, in _invoke
+    rv = self._func(*arguments)
+  File "E:\program\python\lib\site-packages\flask_bootstrap\templates\bootstrap\wtf.html", line 200, in template
+    {{ form.hidden_tag() }}
+  File "E:\program\python\lib\site-packages\jinja2\environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'form' is undefined
+Exception on /add [POST]
+Traceback (most recent call last):
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\program\python\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/project/Python/flask-log/app.py", line 38, in add
+    if form.validate_on_submit():
+  File "E:\program\python\lib\site-packages\flask_wtf\form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "E:\program\python\lib\site-packages\wtforms\form.py", line 310, in validate
+    return super(Form, self).validate(extra)
+  File "E:\program\python\lib\site-packages\wtforms\form.py", line 152, in validate
+    if not field.validate(self, extra):
+  File "E:\program\python\lib\site-packages\wtforms\fields\core.py", line 204, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "E:\program\python\lib\site-packages\wtforms\fields\core.py", line 224, in _run_validation_chain
+    validator(form, self)
+  File "E:\program\python\lib\site-packages\wtforms\validators.py", line 220, in __init__
+    super(Required, self).__init__(*args, **kwargs)
+TypeError: __init__() takes from 1 to 2 positional arguments but 3 were given
+Exception on /add [POST]
+Traceback (most recent call last):
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\program\python\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/project/Python/flask-log/app.py", line 38, in add
+    if form.validate_on_submit():
+  File "E:\program\python\lib\site-packages\flask_wtf\form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "E:\program\python\lib\site-packages\wtforms\form.py", line 310, in validate
+    return super(Form, self).validate(extra)
+  File "E:\program\python\lib\site-packages\wtforms\form.py", line 152, in validate
+    if not field.validate(self, extra):
+  File "E:\program\python\lib\site-packages\wtforms\fields\core.py", line 204, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "E:\program\python\lib\site-packages\wtforms\fields\core.py", line 224, in _run_validation_chain
+    validator(form, self)
+  File "E:\program\python\lib\site-packages\wtforms\validators.py", line 220, in __init__
+    super(Required, self).__init__(*args, **kwargs)
+TypeError: __init__() takes from 1 to 2 positional arguments but 3 were given
+Exception on /add [POST]
+Traceback (most recent call last):
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\program\python\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/project/Python/flask-log/app.py", line 38, in add
+    if form.validate_on_submit():
+  File "E:\program\python\lib\site-packages\flask_wtf\form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "E:\program\python\lib\site-packages\wtforms\form.py", line 310, in validate
+    return super(Form, self).validate(extra)
+  File "E:\program\python\lib\site-packages\wtforms\form.py", line 152, in validate
+    if not field.validate(self, extra):
+  File "E:\program\python\lib\site-packages\wtforms\fields\core.py", line 204, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "E:\program\python\lib\site-packages\wtforms\fields\core.py", line 224, in _run_validation_chain
+    validator(form, self)
+  File "E:\program\python\lib\site-packages\wtforms\validators.py", line 220, in __init__
+    super(Required, self).__init__(*args, **kwargs)
+TypeError: __init__() takes from 1 to 2 positional arguments but 3 were given
+Exception on /add [POST]
+Traceback (most recent call last):
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\program\python\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/project/Python/flask-log/app.py", line 38, in add
+    if form.validate_on_submit():
+  File "E:\program\python\lib\site-packages\flask_wtf\form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "E:\program\python\lib\site-packages\wtforms\form.py", line 310, in validate
+    return super(Form, self).validate(extra)
+  File "E:\program\python\lib\site-packages\wtforms\form.py", line 152, in validate
+    if not field.validate(self, extra):
+  File "E:\program\python\lib\site-packages\wtforms\fields\core.py", line 204, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "E:\program\python\lib\site-packages\wtforms\fields\core.py", line 224, in _run_validation_chain
+    validator(form, self)
+  File "E:\program\python\lib\site-packages\wtforms\validators.py", line 220, in __init__
+    super(Required, self).__init__(*args, **kwargs)
+TypeError: __init__() takes from 1 to 2 positional arguments but 3 were given
+Exception on /add [POST]
+Traceback (most recent call last):
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\program\python\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/project/Python/flask-log/app.py", line 38, in add
+    if form.validate_on_submit():
+  File "E:\program\python\lib\site-packages\flask_wtf\form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "E:\program\python\lib\site-packages\wtforms\form.py", line 310, in validate
+    return super(Form, self).validate(extra)
+  File "E:\program\python\lib\site-packages\wtforms\form.py", line 152, in validate
+    if not field.validate(self, extra):
+  File "E:\program\python\lib\site-packages\wtforms\fields\core.py", line 204, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "E:\program\python\lib\site-packages\wtforms\fields\core.py", line 224, in _run_validation_chain
+    validator(form, self)
+  File "E:\program\python\lib\site-packages\wtforms\validators.py", line 220, in __init__
+    super(Required, self).__init__(*args, **kwargs)
+TypeError: __init__() takes from 1 to 2 positional arguments but 3 were given
+Exception on /add [POST]
+Traceback (most recent call last):
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\program\python\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/project/Python/flask-log/app.py", line 38, in add
+    if form.validate_on_submit():
+  File "E:\program\python\lib\site-packages\flask_wtf\form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "E:\program\python\lib\site-packages\wtforms\form.py", line 310, in validate
+    return super(Form, self).validate(extra)
+  File "E:\program\python\lib\site-packages\wtforms\form.py", line 152, in validate
+    if not field.validate(self, extra):
+  File "E:\program\python\lib\site-packages\wtforms\fields\core.py", line 204, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "E:\program\python\lib\site-packages\wtforms\fields\core.py", line 224, in _run_validation_chain
+    validator(form, self)
+  File "E:\program\python\lib\site-packages\wtforms\validators.py", line 220, in __init__
+    super(Required, self).__init__(*args, **kwargs)
+TypeError: __init__() takes from 1 to 2 positional arguments but 3 were given
+Exception on /add [POST]
+Traceback (most recent call last):
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\program\python\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/project/Python/flask-log/app.py", line 38, in add
+    if form.validate_on_submit():
+  File "E:\program\python\lib\site-packages\flask_wtf\form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "E:\program\python\lib\site-packages\wtforms\form.py", line 310, in validate
+    return super(Form, self).validate(extra)
+  File "E:\program\python\lib\site-packages\wtforms\form.py", line 152, in validate
+    if not field.validate(self, extra):
+  File "E:\program\python\lib\site-packages\wtforms\fields\core.py", line 204, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "E:\program\python\lib\site-packages\wtforms\fields\core.py", line 224, in _run_validation_chain
+    validator(form, self)
+  File "E:\program\python\lib\site-packages\wtforms\validators.py", line 220, in __init__
+    super(Required, self).__init__(*args, **kwargs)
+TypeError: __init__() takes from 1 to 2 positional arguments but 3 were given
+Exception on /submit [GET]
+Traceback (most recent call last):
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\program\python\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/project/Python/flask-log/app.py", line 30, in submit
+    myform = NameForm()
+  File "E:\program\python\lib\site-packages\wtforms\form.py", line 212, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "E:\program\python\lib\site-packages\flask_wtf\form.py", line 158, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "E:\program\python\lib\site-packages\flask_wtf\form.py", line 88, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "E:\program\python\lib\site-packages\wtforms\form.py", line 272, in __init__
+    super(Form, self).__init__(self._unbound_fields, meta=meta_obj, prefix=prefix)
+  File "E:\program\python\lib\site-packages\wtforms\form.py", line 52, in __init__
+    field = meta.bind_field(self, unbound_field, options)
+  File "E:\program\python\lib\site-packages\wtforms\meta.py", line 27, in bind_field
+    return unbound_field.bind(form=form, **options)
+  File "E:\program\python\lib\site-packages\wtforms\fields\core.py", line 350, in bind
+    return self.field_class(*self.args, **kw)
+  File "E:\program\python\lib\site-packages\wtforms\fields\core.py", line 113, in __init__
+    for v in itertools.chain(self.validators, [self.widget]):
+TypeError: 'InputRequired' object is not iterable
+Exception on /submit [GET]
+Traceback (most recent call last):
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\program\python\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/project/Python/flask-log/app.py", line 30, in submit
+    myform = NameForm()
+  File "E:\program\python\lib\site-packages\wtforms\form.py", line 212, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "E:\program\python\lib\site-packages\flask_wtf\form.py", line 158, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "E:\program\python\lib\site-packages\flask_wtf\form.py", line 88, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "E:\program\python\lib\site-packages\wtforms\form.py", line 272, in __init__
+    super(Form, self).__init__(self._unbound_fields, meta=meta_obj, prefix=prefix)
+  File "E:\program\python\lib\site-packages\wtforms\form.py", line 52, in __init__
+    field = meta.bind_field(self, unbound_field, options)
+  File "E:\program\python\lib\site-packages\wtforms\meta.py", line 27, in bind_field
+    return unbound_field.bind(form=form, **options)
+  File "E:\program\python\lib\site-packages\wtforms\fields\core.py", line 350, in bind
+    return self.field_class(*self.args, **kw)
+  File "E:\program\python\lib\site-packages\wtforms\fields\core.py", line 113, in __init__
+    for v in itertools.chain(self.validators, [self.widget]):
+TypeError: 'Required' object is not iterable
+Exception on /submit [GET]
+Traceback (most recent call last):
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\program\python\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/project/Python/flask-log/app.py", line 30, in submit
+    myform = NameForm()
+  File "E:\program\python\lib\site-packages\wtforms\form.py", line 212, in __call__
+    return type.__call__(cls, *args, **kwargs)
+  File "E:\program\python\lib\site-packages\flask_wtf\form.py", line 158, in __init__
+    super(Form, self).__init__(*args, **kwargs)
+  File "E:\program\python\lib\site-packages\flask_wtf\form.py", line 88, in __init__
+    super(FlaskForm, self).__init__(formdata=formdata, **kwargs)
+  File "E:\program\python\lib\site-packages\wtforms\form.py", line 272, in __init__
+    super(Form, self).__init__(self._unbound_fields, meta=meta_obj, prefix=prefix)
+  File "E:\program\python\lib\site-packages\wtforms\form.py", line 52, in __init__
+    field = meta.bind_field(self, unbound_field, options)
+  File "E:\program\python\lib\site-packages\wtforms\meta.py", line 27, in bind_field
+    return unbound_field.bind(form=form, **options)
+  File "E:\program\python\lib\site-packages\wtforms\fields\core.py", line 350, in bind
+    return self.field_class(*self.args, **kw)
+  File "E:\program\python\lib\site-packages\wtforms\fields\core.py", line 113, in __init__
+    for v in itertools.chain(self.validators, [self.widget]):
+TypeError: 'type' object is not iterable
+Exception on /add [POST]
+Traceback (most recent call last):
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "E:\program\python\lib\site-packages\flask\_compat.py", line 33, in reraise
+    raise value
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "E:\program\python\lib\site-packages\flask\app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:/project/Python/flask-log/app.py", line 38, in add
+    if form.validate_on_submit():
+  File "E:\program\python\lib\site-packages\flask_wtf\form.py", line 101, in validate_on_submit
+    return self.is_submitted() and self.validate()
+  File "E:\program\python\lib\site-packages\wtforms\form.py", line 310, in validate
+    return super(Form, self).validate(extra)
+  File "E:\program\python\lib\site-packages\wtforms\form.py", line 152, in validate
+    if not field.validate(self, extra):
+  File "E:\program\python\lib\site-packages\wtforms\fields\core.py", line 204, in validate
+    stop_validation = self._run_validation_chain(form, chain)
+  File "E:\program\python\lib\site-packages\wtforms\fields\core.py", line 224, in _run_validation_chain
+    validator(form, self)
+  File "E:\program\python\lib\site-packages\wtforms\validators.py", line 220, in __init__
+    super(Required, self).__init__(*args, **kwargs)
+TypeError: __init__() takes from 1 to 2 positional arguments but 3 were given

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<!-- 改用引用别的模块中的函数 -->
+{% import 'macros.html' as macros %}
+
+
+{% include 'top.html' %}
+{{ word|capitalize }}
+{% if user %}
+    Hello,{{ user }}
+{% else %}
+    Hello,Stranger!
+{% endif %}
+
+<ul>
+    {% for comment in comments %}
+        <!-- 像引入包一样引入模块，但是调用时要用现在的包名 -->
+        {{ macros.render_comment(comment) }}
+    {% endfor %}
+</ul>
+
+</body>
+</html>
